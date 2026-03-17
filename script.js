@@ -528,3 +528,75 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Resources data (static list reflecting files in /resources)
+const resourcesList = [
+    { name: "TJ Previous Exam Question", path: "resources/TJ_PreviousExamQuestion.pdf", type: "pdf" },
+    { name: "Discrete Mathematics Syllabus", path: "resources/hstu_sylabus/Discreate_mathmatics.pdf", type: "pdf" },
+    { name: "Structured Programming", path: "resources/hstu_sylabus/C_programming.pdf", type: "pdf" }
+];
+
+function renderResources() {
+    const container = document.getElementById('resources-list');
+    if (!container) return;
+
+    let html = '';
+    resourcesList.forEach(res => {
+        html += `
+            <a class="resource-card" href="${res.path}" target="_blank" rel="noopener noreferrer">
+                <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+                <div class="resource-info">
+                    <h4>${res.name}</h4>
+                    <span class="resource-path">${res.name}</span>
+                </div>
+            </a>
+        `;
+    });
+
+    container.innerHTML = html;
+}
+
+// Add resource styles
+const resStyle = document.createElement('style');
+resStyle.textContent = `
+    .resources-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .resource-card {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        padding: 1rem;
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .resource-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+    }
+    .resource-icon {
+        font-size: 2rem;
+        color: #e74c3c;
+    }
+    .resource-info h4 {
+        margin: 0 0 0.25rem;
+        font-size: 1rem;
+    }
+    .resource-path {
+        font-size: 0.85rem;
+        color: #777;
+    }
+`;
+document.head.appendChild(resStyle);
+
+// Render resources after DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+    renderResources();
+});
