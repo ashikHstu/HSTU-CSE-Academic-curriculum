@@ -177,3 +177,5 @@ For questions, suggestions, or feedback:
 ---
 
 **Note**: This project is for educational and informational purposes. Always refer to the official HSTU CSE department for the most current syllabus information.
+
+website link: https://ashikhstu.github.io/HSTU-CSE-Academic-curriculum/ 
