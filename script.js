@@ -1,18 +1,81 @@
-// Course data structure
+// Course data structure with detailed information
 const courseData = {
     sem1: {
         title: "Level 1 - Semester I",
         totalCredits: "19.00",
         courses: [
-            { code: "CSE 101", title: "Fundamentals of Computer and Computing", credits: "2.00", hours: "2.00", description: "Introduction to computer systems, programming concepts, and basic software applications." },
-            { code: "CSE 102", title: "Fundamentals of Computer and Computing Sessional", credits: "0.75", hours: "1.50", description: "Practical laboratory work based on CSE 101." },
-            { code: "CSE 103", title: "Discrete Mathematics", credits: "3.00", hours: "3.00", description: "Logic, set theory, combinatorics, graph theory, and mathematical reasoning." },
-            { code: "MAT 101", title: "Mathematics I (Calculus and Co-ordinate Geometry)", credits: "3.00", hours: "3.00", description: "Differential and integral calculus, coordinate geometry, and analytical methods." },
-            { code: "PHY 103", title: "Physics (Electricity, Magnetism, Optics, Waves and Oscillations)", credits: "3.00", hours: "3.00", description: "Fundamental principles of physics with focus on electricity, magnetism, and wave phenomena." },
-            { code: "PHY 104", title: "Physics (Electricity, Magnetism, Optics, Waves, and Oscillations) Sessional", credits: "1.50", hours: "3.00", description: "Laboratory experiments and practical work in physics." },
-            { code: "AIE 105", title: "Basic Mechanical Engineering", credits: "3.00", hours: "3.00", description: "Introduction to mechanical engineering principles and applications." },
-            { code: "ENG 101", title: "Communicative English", credits: "2.00", hours: "2.00", description: "English language skills for effective communication in academic and professional settings." },
-            { code: "ENG 102", title: "Communicative English Sessional", credits: "0.75", hours: "1.50", description: "Practical language exercises and communication skills development." }
+            { 
+                code: "CSE 101", 
+                title: "Fundamentals of Computer and Computing", 
+                credits: "2.00", 
+                hours: "2.00", 
+                description: "Introduction to computer systems, programming concepts, and basic software applications.",
+                detailed: "Introduction: History and revolution, Basic organization of computer, Types of computer, Number systems, Types of memory, Types of software, Operating system, Databases, Application packages. Peripheral Devices: Input device, Output device, Storage, Display, Bus. Computer Networks: Computer networks, WWW, Network card and accessories, Brief idea on network operating systems and popular NOS like- Windows NT, UNIX, Linux. Application Packages: Different application packages like Word processing, Spreadsheet analysis, Data base handling. Number Systems: Binary, Octal and Hexadecimal; Addition, Subtraction, Multiplication, Division. Codes: BCD, Excess three and Gray codes; Error detecting codes and Error correcting codes. Programming Concept: Problem analysis, Algorithm build-up, Flowcharts and Pseudo-coding, Data types, Expressions, Control flow."
+            },
+            { 
+                code: "CSE 102", 
+                title: "Fundamentals of Computer and Computing Sessional", 
+                credits: "0.75", 
+                hours: "1.50", 
+                description: "Practical laboratory work based on CSE 101.",
+                detailed: "Laboratory works based on CSE 101. Books: Anita Goel, Computer Fundamentals, Pearson, 2010. Timothy O'Leary, Linda O'Leary, Computing Essentials, 2014 Complete Edition, McGraw-Hill/Irwi, 2013. K. L. James, Computer Hardware: Installation, Interfacing, Troubleshooting and Maintenance, Prentice-Hall of India Pvt. Ltd, 2013. Peter Norton, Introduction to computers, 6th edition, 2006. Michael Price, Computer Basics in Easy Steps, In Easy Steps Limited, 2011."
+            },
+            { 
+                code: "CSE 103", 
+                title: "Discrete Mathematics", 
+                credits: "3.00", 
+                hours: "3.00", 
+                description: "Logic, set theory, combinatorics, graph theory, and mathematical reasoning.",
+                detailed: "Logics and Proofs: Propositional logic, Applications of propositional logic, Propositional equivalences, Predicates and Quantifiers, Nested quantifiers, Rules of inference, Introduction to proofs. Set, Function, Sequence, Summation and Matrix: Sets, Set operations, Functions, Sequences and summations, Zero–One matrices, Boolean product. Number Theory: Divisibility and modular arithmetic, Integer representations and Algorithms, Primes and Greatest Common Divisors (GCD), Modular exponentiation. Induction: Mathematical induction. Counting: The basics of counting, the pigeonhole principle, Permutations and Combinations, Binomial coefficients and identities, Generalized permutations and combinations. Recursion: Applications of recurrence relations. Inclusion-Exclusion: Inclusion–Exclusion. Relations: Relations, their properties, Representing relations. Graphs: Graphs and graph models, Graph terminology and special types of graph, Euler and Hamilton paths. Trees: Spanning trees, Rooted trees, Binary trees, Huffman trees, Tree traversing."
+            },
+            { 
+                code: "MAT 101", 
+                title: "Mathematics I (Calculus and Co-ordinate Geometry)", 
+                credits: "3.00", 
+                hours: "3.00", 
+                description: "Differential and integral calculus, coordinate geometry, and analytical methods.",
+                detailed: "Integral Calculus: Definitions of integration, Integration by the method of substitutions, Integration by parts, Standard integrals, Integration by the method of successive reduction, Definite integrals and its properties and use in summing series, Walli's formula, Improper integrals, Beta function and Gamma function, Area under a plane curve in Cartesian and polar co-ordinates, Area of the region enclosed by two curves in Cartesian and polar co-ordinates, Trapezoidal rule, Simpson's rule. Arc lengths of curves in Cartesian and polar co-ordinates, parametric and pedal equations, Volume of solids of revolution, Area of surface of revolution. Differential Calculus: Limits, Continuity and Differentiability. Successive differentiation of various types of functions, Leibniz's theorem, Rolle's theorem, Mean value theorem in finite forms, Taylor's and Maclaurin's theorems in finite and infinite forms, Lagrange's form of remainders, Cauchy's form of remainder, Expansion of functions, Evaluation of indeterminate forms by L'Hospital's rule, Partial differentiation, Euler's theorem, Tangent and Normal, Subtangent and subnormal in Cartesian and polar co-ordinates, Maximum and minimum values of functions of single variable, Points of inflexion, Curvature, Radius of curvature, Center of curvature. Co-ordinate Geometry: Transformation of co-ordinates axes and its uses, Equation of conics and its reduction to standard forms, Pair of straight lines, Homogeneous equations of second degree, Angle between a pair of straight lines, Pair of lines joining the origin to the point of intersection of two given curves, circles, System of circles, Orthogonal circles, Radical axis, Radical center, Properties of radical axes, Coaxial circles and limiting points, Equations of parabola, Ellipse and hyperbola in Cartesian and polar co-ordinates, Chord of contact, Chord in terms of its middle points, Pole and polar parametric co-ordinates, Diameters, Conjugate diameters and their properties, Director circles and asymptotes."
+            },
+            { 
+                code: "PHY 103", 
+                title: "Physics (Electricity, Magnetism, Optics, Waves and Oscillations)", 
+                credits: "3.00", 
+                hours: "3.00", 
+                description: "Fundamental principles of physics with focus on electricity, magnetism, and wave phenomena.",
+                detailed: "Charge, Electric Field and Gauss's Law: Simple phenomena in electrostatics, Electrostatic induction and charge density, Coulomb's law, Electric field and field strength, Point charge in an electric field, Dipole in an electric field, Electric flux, Gauss's law and some applications, Electric potential, Potential due to a point charge, Equipotential surfaces, Potential energy, Potential gradient, Capacitance and its calculation, Parallel plate capacitor with dielectric, Dielectric and Gauss's law, Electric vectors, Energy stored in an electric field. Electric Current, Simple Circuits and Electrical Measurements: Current and Ohm's law,E.M.F. and potential difference, Kirchhoff's laws, Whetstone bridge, Single loop and multi loop circuits, Simple RC and RL circuits, Kirchhoff''s laws, the potentiometer, Moving coil Galvanometer, Ammeter, Voltmeter, Multimeter, Wattmeter and Energy meter, Measurements of Voltage, Current, Resistance, Inductance, Capacitance, Power and Energy. Magnetic Field and Force on Current: Coulomb's law, Magnetic field and field strength, Magnetic force on current, Ampere's law, Directions of current and field, Maxwell's cork screw rule, Fleming's left hand rule, Magnetic field near long wire, Magnetic field for solenoid, Biot-savart law. Faraday's law of electromagnetic induction, Fleming's right hand rule, Lenz's law. Magnetic Properties of Matter: Poles and dipoles, Coulomb's law for magnets and Gauss's theorem of magnetism, Dia-magnetism, Para-magnetism and Ferro-magnetism, Magnetomotive force and field intensity, Concept of self and mutual inductance, Coefficient of magnetic coupling, Rise of current and decay of current in Inductive circuit, Energy in magnetic field, Inductance in series and parallel, Hysteresis and eddy current losses. Optics: Refraction and total internal reflection, Group velocity and Phase velocity of light, Dispersion, Interference, Holography, Fresnel and Fraunhofer diffraction, Polarization of lightwave. Waves and Oscillations: Differential equation of a simple harmonic oscillator, Total energy and average energy, Combination of simple harmonic oscillations, Lissajous figures, Spring mass system, Calculation of time period of torsional pendulum, Damped oscillation, Determination of damping co-efficient. Forced oscillation, Resonance, Two-body oscillations, Reduced mass, Differential equation of a progressive wave, Power and intensity of wave motion, Stationary wave, Group velocity and phase velocity, Architectural acoustics, Reverberation and Sabine's formula."
+            },
+            { 
+                code: "PHY 104", 
+                title: "Physics (Electricity, Magnetism, Optics, Waves, and Oscillations) Sessional", 
+                credits: "1.50", 
+                hours: "3.00", 
+                description: "Laboratory experiments and practical work in physics.",
+                detailed: "Laboratory works based on PHY 103. Books: David Halliday, Robert Resnick, Physics Part-II, Wiley Eastern Limited, 1992. Edward M. Purcell, David J. Morin, Electricity and Magnetism, Cambridge University Press, 3rd edition, 2013. Grant R. Fowles, Introduction to Modern Optics, Dover Publications, 2nd edition, 1989. D. N. Vasudeva, Fundamentals of Magnetism and Electricity, S. Chand and Company Limited, 1998. Wayne M. Saslow, Electricity, Magnetism and Light, Academic Press, 1st edition, 2002. David Halliday, Robert Resnick and Jearl Walker, Fundamentals of Physics Extended, John Wiley and Sons Co.(USA), 10th edition, 2013."
+            },
+            { 
+                code: "AIE 105", 
+                title: "Basic Mechanical Engineering", 
+                credits: "3.00", 
+                hours: "3.00", 
+                description: "Introduction to mechanical engineering principles and applications.",
+                detailed: "Thermodynamics: Zeroth, First and Second laws of Thermodynamics, Thermodynamics system and processes, Irreversibility and availability, Entropy, Sources of energy, Conventional and renewable, IC engines, Refrigeration and Air Conditioning systems, Kinematics and dynamics of particles and Rigid bodies, Forces in trusses and frames. Heat-Transfer: Modes of heat transfer, One dimensional heat conduction, Resistance concept and electrical analogy. Books: Dowling, Norman E. Mechanical Behavior of Materials. Pearson, 2012. R.K. Rajput. Thermal Engineering. Laxmi Publications, 2010. Pravin Kumar. Basic Mechanical Engineering. Pearson, 2010."
+            },
+            { 
+                code: "ENG 101", 
+                title: "Communicative English", 
+                credits: "2.00", 
+                hours: "2.00", 
+                description: "English language skills for effective communication in academic and professional settings.",
+                detailed: "Reading: Skimming, Scanning, Interpretation, Reading short stories and Comprehension. Writing: Punctuation, Indenting, Abbreviation, Capitalization, Paragraph, Composition, Authorization letter, C.V writing. Notice, Memo, Tender, Précis, Report, Free composition, Creative writing. Grammar: Parts of speech, Phrase, Clause, Sentence, Right form of verb, Preposition, Correction, Joining, Changing. Phonetics and Phonology: Phonetics, Phonology, Vowel, Consonant, IPA transcription. Books: Dr. Moniruzzaman, A Study of English Language, Friend's Book Corner, 2006. Dr. JohirulHaque, MdAtaulHaque, S M Amanullah, Language, Friend's Book Corner, 3rd edition, 1985. M. Swan, Practical English Usage, Oxford University Press, 1980. G. Leech, A Communicative English Grammar, Longman Publication, Singapore, 1975. F. Palmer, The English Verbs, Routledge, London, UK, 2016. J.C. Nesfield, English Grammar Series, Radha Publishing House, Calcutta, Revised Edition, 1997. Maurice Imhoof, From Paragraph to Essay, Longman, 1975."
+            },
+            { 
+                code: "ENG 102", 
+                title: "Communicative English Sessional", 
+                credits: "0.75", 
+                hours: "1.50", 
+                description: "Practical language exercises and communication skills development.",
+                detailed: "Listening: Pronunciation, Audio listening, Vowel measurement. Speaking: Social English practice, Verbal and non-verbal communication, Regular practice in the class. Presentation: Presentation skill. Books: Ann Baker, Ship or Sheep?, Cambridge University Press, 3rd edition, 2006. D. Jones, The Pronunciation of English, Cambridge University Press, 4th Indian Reprint, 1991. SM Amanullah, A Guide to Correct Speech, Friend's Book Corner, 2010."
+            }
         ]
     },
     sem2: {
@@ -221,9 +284,9 @@ function showSemester(semesterKey) {
         <div class="course-grid">
     `;
     
-    data.courses.forEach(course => {
+        data.courses.forEach(course => {
         html += `
-            <div class="course-card fade-in">
+            <div class="course-card fade-in" onclick="showCourseDetail('${semesterKey}', '${course.code}')">
                 <div class="course-header">
                     <span class="course-code">${course.code}</span>
                     <span class="course-credits">${course.credits} Credits</span>
@@ -231,6 +294,7 @@ function showSemester(semesterKey) {
                 <h3 class="course-title">${course.title}</h3>
                 <p class="course-hours">${course.hours} Hours/Week</p>
                 <p class="course-description">${course.description}</p>
+                <div class="course-more">Click for detailed syllabus →</div>
             </div>
         `;
     });
@@ -303,16 +367,83 @@ function showOption(optionKey) {
     }, 100);
 }
 
+// Function to show course detail
+function showCourseDetail(semesterKey, courseCode) {
+    const modal = document.getElementById('course-detail-modal');
+    const content = document.getElementById('course-detail-content');
+    const data = courseData[semesterKey];
+    
+    if (!data) return;
+    
+    const course = data.courses.find(c => c.code === courseCode);
+    if (!course) return;
+    
+    let html = `
+        <div class="course-detail-header">
+            <div class="course-detail-code">${course.code}</div>
+            <div class="course-detail-info">
+                <h2>${course.title}</h2>
+                <div class="course-detail-meta">
+                    <span class="meta-item"><i class="fas fa-clock"></i> ${course.hours} Hours/Week</span>
+                    <span class="meta-item"><i class="fas fa-credit-card"></i> ${course.credits} Credits</span>
+                    <span class="meta-item"><i class="fas fa-calendar"></i> ${data.title}</span>
+                </div>
+            </div>
+        </div>
+        <div class="course-detail-body">
+            <div class="course-detail-section">
+                <h3><i class="fas fa-book"></i> Course Description</h3>
+                <p>${course.description}</p>
+            </div>
+            <div class="course-detail-section">
+                <h3><i class="fas fa-list-alt"></i> Detailed Syllabus</h3>
+                <div class="syllabus-content">
+                    ${course.detailed || 'Detailed syllabus content coming soon...'}
+                </div>
+            </div>
+        </div>
+    `;
+    
+    content.innerHTML = html;
+    modal.style.display = 'block';
+    
+    // Add animation
+    setTimeout(() => {
+        const detailContent = content.querySelector('.course-detail-body');
+        if (detailContent) {
+            detailContent.style.opacity = '0';
+            detailContent.style.transform = 'translateY(20px)';
+            detailContent.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            
+            setTimeout(() => {
+                detailContent.style.opacity = '1';
+                detailContent.style.transform = 'translateY(0)';
+            }, 100);
+        }
+    }, 100);
+}
+
+// Function to close course detail modal
+function closeCourseDetail() {
+    const modal = document.getElementById('course-detail-modal');
+    modal.style.display = 'none';
+}
+
 // Function to close option modal
 function closeOption() {
     const modal = document.getElementById('option-modal');
     modal.style.display = 'none';
 }
 
-// Close modal when clicking outside
+// Close modals when clicking outside
 window.onclick = function(event) {
-    const modal = document.getElementById('option-modal');
-    if (event.target === modal) {
+    const courseModal = document.getElementById('course-detail-modal');
+    const optionModal = document.getElementById('option-modal');
+    
+    if (event.target === courseModal) {
+        closeCourseDetail();
+    }
+    if (event.target === optionModal) {
         closeOption();
     }
 }
