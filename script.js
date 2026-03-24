@@ -248,8 +248,63 @@ const optionData = {
     }
 };
 
-// Initialize the page
+// Mobile Navigation Toggle
 document.addEventListener('DOMContentLoaded', function() {
+    const navToggle = document.getElementById('nav-toggle');
+    const mainNav = document.getElementById('main-nav');
+    const body = document.body;
+    
+    if (navToggle && mainNav) {
+        navToggle.addEventListener('click', function() {
+            // Create mobile nav if it doesn't exist
+            let mobileNav = document.querySelector('.mobile-nav');
+            if (!mobileNav) {
+                mobileNav = document.createElement('div');
+                mobileNav.className = 'mobile-nav';
+                mobileNav.innerHTML = `
+                    <button class="nav-close" onclick="closeMobileNav()">&times;</button>
+                    <nav class="mobile-nav-content">
+                        ${mainNav.innerHTML}
+                    </nav>
+                `;
+                document.body.appendChild(mobileNav);
+            }
+            
+            // Toggle mobile nav
+            mobileNav.classList.toggle('active');
+            body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        });
+    }
+    
+    // Close mobile nav function
+    window.closeMobileNav = function() {
+        const mobileNav = document.querySelector('.mobile-nav');
+        if (mobileNav) {
+            mobileNav.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    };
+    
+    // Close mobile nav when clicking on a link
+    document.addEventListener('click', function(e) {
+        if (e.target.closest('.mobile-nav a')) {
+            closeMobileNav();
+        }
+    });
+    
+    // Handle window resize to clean up mobile nav
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+            const mobileNav = document.querySelector('.mobile-nav');
+            if (window.innerWidth > 768 && mobileNav) {
+                mobileNav.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }, 250);
+    });
+    
     // Show default semester (Level 1 - Semester I)
     showSemester('sem1');
     
