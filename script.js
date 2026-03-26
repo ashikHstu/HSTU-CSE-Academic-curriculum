@@ -143,7 +143,7 @@ const courseData = {
         title: "Level 3 - Semester II",
         totalCredits: "18.50",
         courses: [
-            { code: "CSE 353", title: "Operating System", credits: "3.00", hours: "3.00", description: "Operating system concepts, process management, memory management, and file systems." },
+            { code: "CSE 353", title: "Operating System", credits: "3.00", hours: "3.00", description: "Operating system concepts, process management, memory management, and file systems, (will add soon)." },
             { code: "CSE 354", title: "Operating System Sessional", credits: "0.75", hours: "1.50", description: "Practical exercises in operating system concepts and system programming." },
             { code: "CSE 355", title: "Web Engineering", credits: "2.00", hours: "2.00", description: "Web application development, client-server architecture, and web technologies." },
             { code: "CSE 356", title: "Web Engineering Sessional", credits: "0.75", hours: "1.50", description: "Hands-on web development projects using modern web technologies." },
